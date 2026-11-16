@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Junk in the Trunk | Junk Hauling</title>
+<meta name="description" content="Junk in the Trunk is a junk hauling crew. Call or text 619-638-0519 or 619-987-6571 and we'll load it up and haul it away.">
+<meta property="og:title" content="Junk in the Trunk | Junk Hauling">
+<meta property="og:description" content="You point, we lift, it's gone. Call or text 619-638-0519 or 619-987-6571.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#123B34">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123B34'/%3E%3Cpath d='M10 40h38l6-10H44l-4-8H18l-8 18z' fill='%23F4B63F'/%3E%3Ccircle cx='22' cy='44' r='6' fill='%23FFF8EC'/%3E%3Ccircle cx='46' cy='44' r='6' fill='%23FFF8EC'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: a bold two-tone poster hero with the phone numbers as the main event, then services as stacked "load" tags, three steps, and a text-us request card. A call bar stays pinned on phones. */
+:root {
+  --pine: #123B34;      /* deep pine green, the truck */
+  --pine-2: #1C5248;
+  --sun: #F4B63F;       /* sunflower, the load */
+  --clay: #E0663A;      /* tail-light accent, used once per screen */
+  --paper: #FBF7EF;
+  --ink: #17221F;
+  --muted: #55635E;
+  --line: #E4DCCD;
+  --card: #FFFFFF;
+  --display: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #0E1A17; --ink: #F3EFE6; --muted: #A9B6B1; --line: #26372F; --card: #142420; --pine-2: #22604F; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(18px, env(safe-area-inset-left)); padding-right: max(18px, env(safe-area-inset-right)); }
+h1, h2, h3 { font-family: var(--display); line-height: 1.02; letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+.eyebrow { font: 600 13px/1 var(--body); letter-spacing: 0.14em; text-transform: uppercase; }
+
+/* header */
+header { background: var(--pine); color: #FFF8EC; padding-top: env(safe-area-inset-top); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; }
+.brand { display: flex; align-items: center; gap: 10px; font: 800 20px/1 var(--display); text-decoration: none; }
+.brand svg { width: 38px; height: 38px; flex: none; }
+.nav a.small { font-weight: 600; font-size: 15px; text-decoration: none; padding: 10px 16px; border: 2px solid rgba(255,248,236,.35); border-radius: 999px; }
+.nav a.small:hover { border-color: var(--sun); color: var(--sun); }
+
+/* hero */
+.hero { background: var(--pine); color: #FFF8EC; position: relative; overflow: hidden; }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: end; padding-block: 36px 64px; }
+.hero h1 { font-size: clamp(54px, 9vw, 112px); font-weight: 800; }
+.hero h1 .load { color: var(--sun); display: block; }
+.hero p.lede { font-size: 20px; max-width: 30ch; color: #E7EFEA; margin: 22px 0 30px; }
+.calls { display: grid; gap: 12px; max-width: 460px; }
+.call { display: flex; align-items: center; justify-content: space-between; gap: 14px; background: var(--sun); color: #1A1407; text-decoration: none; border-radius: 18px; padding: 16px 20px; box-shadow: 0 6px 0 #B8851F; transition: transform .12s ease, box-shadow .12s ease; }
+.call:hover { transform: translateY(-2px); box-shadow: 0 8px 0 #B8851F; }
+.call:active { transform: translateY(4px); box-shadow: 0 2px 0 #B8851F; }
+.call .num { font: 800 clamp(24px, 4vw, 30px)/1 var(--display); letter-spacing: 0.01em; font-variant-numeric: tabular-nums; }
+.call .act { font: 600 14px/1.2 var(--body); text-align: right; }
+.call.alt { background: #FFF8EC; box-shadow: 0 6px 0 #C9BFA9; }
+.call.alt:hover { box-shadow: 0 8px 0 #C9BFA9; }
+.call.alt:active { box-shadow: 0 2px 0 #C9BFA9; }
+.hero .note { margin-top: 16px; font-size: 15px; color: #C9D8D1; }
+.truck { width: 100%; max-width: 420px; justify-self: end; }
+.road { position: absolute; left: 0; right: 0; bottom: 0; height: 14px; background: repeating-linear-gradient(90deg, var(--sun) 0 46px, transparent 46px 80px); opacity: .55; }
+
+/* sections */
+section { padding-block: 72px; }
+.head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px 32px; margin-bottom: 32px; }
+.head h2 { font-size: clamp(36px, 5.5vw, 58px); }
+.head p { max-width: 42ch; margin: 0; color: var(--muted); }
+.eyebrow.c { color: var(--clay); margin-bottom: 12px; display: block; }
+
+/* what we haul: luggage-tag style chips */
+.tags { display: flex; flex-wrap: wrap; gap: 12px; }
+.tag { display: inline-flex; align-items: center; gap: 10px; background: var(--card); border: 2px solid var(--line); border-radius: 14px 999px 999px 14px; padding: 12px 20px 12px 14px; font-weight: 600; font-size: 17px; }
+.tag i { width: 10px; height: 10px; border-radius: 50%; background: var(--paper); border: 2px solid var(--muted); flex: none; }
+.tag:nth-child(3n+1) i { background: var(--sun); border-color: var(--sun); }
+.haul-note { margin-top: 22px; color: var(--muted); max-width: 60ch; }
+
+/* steps */
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.step { background: var(--card); border: 2px solid var(--line); border-radius: 22px; padding: 26px; display: grid; gap: 10px; align-content: start; }
+.step .n { font: 800 44px/1 var(--display); color: var(--pine-2); }
+.step h3 { font-size: 26px; }
+.step p { margin: 0; color: var(--muted); }
+
+/* request */
+.request { background: var(--sun); color: #1A1407; border-radius: 30px; padding: clamp(24px, 5vw, 52px); display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 36px; }
+.request h2 { font-size: clamp(36px, 5vw, 56px); }
+.request p { margin: 14px 0 0; max-width: 34ch; }
+form { display: grid; gap: 14px; min-width: 0; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; }
+input, textarea, select { font: 500 16px/1.4 var(--body); color: #17221F; background: #FFFBF2; border: 2px solid #1A1407; border-radius: 14px; padding: 13px 14px; width: 100%; }
+textarea { min-height: 110px; resize: vertical; }
+input:focus, textarea:focus, select:focus, a:focus-visible, button:focus-visible { outline: 3px solid var(--clay); outline-offset: 2px; }
+button.send { font: 800 20px/1 var(--display); background: var(--pine); color: #FFF8EC; border: 0; border-radius: 16px; padding: 18px 22px; cursor: pointer; box-shadow: 0 6px 0 #0A231F; }
+button.send:active { transform: translateY(4px); box-shadow: 0 2px 0 #0A231F; }
+.fine { font-size: 13px; margin: 0; }
+
+footer { padding-block: 40px 120px; color: var(--muted); font-size: 15px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; }
+footer strong { color: var(--ink); font-family: var(--display); font-size: 20px; }
+
+/* phone call bar */
+.bar { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--pine); padding: 10px max(12px, env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)); gap: 10px; box-shadow: 0 -8px 24px rgba(0,0,0,.18); }
+.bar a { flex: 1; text-align: center; text-decoration: none; font: 800 17px/1 var(--display); padding: 15px 8px; border-radius: 14px; background: var(--sun); color: #1A1407; }
+.bar a.t { background: #FFF8EC; }
+
+@media (max-width: 820px) {
+  .hero .wrap, .request { grid-template-columns: 1fr; }
+  .truck { justify-self: start; max-width: 300px; order: -1; }
+  .steps { grid-template-columns: 1fr; }
+  .bar { display: flex; }
+  .nav a.small { display: none; }
+}
+@media (max-width: 480px) {
+  .row { grid-template-columns: 1fr; }
+  .call { flex-direction: column; align-items: flex-start; }
+  .call .act { text-align: left; }
+  section { padding-block: 56px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Junk in the Trunk home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1C5248"/><path d="M10 40h38l6-10H44l-4-8H18l-8 18z" fill="#F4B63F"/><circle cx="22" cy="44" r="6" fill="#FFF8EC"/><circle cx="46" cy="44" r="6" fill="#FFF8EC"/></svg>
+      Junk in the Trunk
+    </a>
+    <a class="small" href="#request">Get a price</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow" style="color:var(--sun)">Junk hauling</span>
+        <h1 style="margin-top:14px">Junk in <span class="load">the Trunk.</span></h1>
+        <p class="lede">You point, we lift, it's gone. Furniture, appliances, yard waste, whole garages. Call or text and we'll load it up and haul it away.</p>
+        <div class="calls">
+          <a class="call" href="tel:+16196380519"><span class="num">619-638-0519</span><span class="act">Tap to call<br>or text</span></a>
+          <a class="call alt" href="tel:+16199876571"><span class="num">619-987-6571</span><span class="act">Tap to call<br>or text</span></a>
+        </div>
+        <p class="note">Fastest way to a price: text us a photo of what needs to go.</p>
+      </div>
+      <svg class="truck" viewBox="0 0 420 260" role="img" aria-label="A pickup truck with a bed full of junk">
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <!-- load in the bed -->
+          <rect x="70" y="52" width="70" height="58" rx="6" fill="#E0663A" transform="rotate(-8 105 81)"/>
+          <rect x="132" y="38" width="62" height="74" rx="6" fill="#FFF8EC" transform="rotate(5 163 75)"/>
+          <path d="M142 58h40M142 74h40M142 90h40" stroke="#123B34" stroke-width="5" transform="rotate(5 163 75)"/>
+          <circle cx="218" cy="86" r="26" fill="#F4B63F"/>
+          <path d="M60 112c20-22 44-30 70-26" stroke="#F4B63F" stroke-width="8"/>
+          <!-- truck body -->
+          <path d="M40 112h214v74H40z" fill="#1C5248"/>
+          <path d="M254 96h70l46 50v40H254z" fill="#2B7465"/>
+          <path d="M270 110h48l32 36h-80z" fill="#BFE0D6"/>
+          <rect x="356" y="160" width="22" height="10" rx="3" fill="#F4B63F"/>
+          <rect x="34" y="150" width="14" height="22" rx="3" fill="#E0663A"/>
+          <path d="M40 112h214" stroke="#0A231F" stroke-width="6"/>
+          <!-- wheels -->
+          <circle cx="104" cy="190" r="34" fill="#0A231F"/><circle cx="104" cy="190" r="14" fill="#FFF8EC"/>
+          <circle cx="318" cy="190" r="34" fill="#0A231F"/><circle cx="318" cy="190" r="14" fill="#FFF8EC"/>
+          <!-- motion lines -->
+          <path d="M6 128h22M0 150h18M10 172h16" stroke="#F4B63F" stroke-width="6" opacity=".8"/>
+        </g>
+      </svg>
+    </div>
+    <div class="road" aria-hidden="true"></div>
+  </div>
+
+  <section id="haul">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="eyebrow c">What we haul</span><h2>If it fits in the truck, it's going.</h2></div>
+        <p>Big or small, one item or a full cleanout. Tell us what you've got and we'll handle the heavy lifting.</p>
+      </div>
+      <div class="tags">
+        <span class="tag"><i></i>Couches and furniture</span>
+        <span class="tag"><i></i>Mattresses</span>
+        <span class="tag"><i></i>Appliances</span>
+        <span class="tag"><i></i>Garage cleanouts</span>
+        <span class="tag"><i></i>Yard waste and branches</span>
+        <span class="tag"><i></i>Move-out leftovers</span>
+        <span class="tag"><i></i>Boxes and clutter</span>
+        <span class="tag"><i></i>Old TVs and electronics</span>
+        <span class="tag"><i></i>Exercise equipment</span>
+        <span class="tag"><i></i>Shed and attic junk</span>
+      </div>
+      <p class="haul-note">Not sure if we take it? Text us a picture and ask.</p>
+    </div>
+  </section>
+
+  <section id="how" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="eyebrow c">How it works</span><h2>Three steps. Zero lifting for you.</h2></div>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">1</span><h3>Send a photo</h3><p>Call or text either number with a picture of what needs to go and where it is.</p></div>
+        <div class="step"><span class="n">2</span><h3>Get your price</h3><p>We'll tell you what it costs up front and set a pickup time that works for you.</p></div>
+        <div class="step"><span class="n">3</span><h3>We haul it away</h3><p>We show up, carry it out, load the truck and leave the space clear.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="request" style="padding-top:0">
+    <div class="wrap">
+      <div class="request">
+        <div>
+          <span class="eyebrow">Request a pickup</span>
+          <h2 style="margin-top:12px">Tell us what's going.</h2>
+          <p>Fill this in and tap send. It opens a text to us with everything filled out, so you can attach a photo before it goes.</p>
+        </div>
+        <form id="f" novalidate>
+          <div class="row">
+            <label for="name">Your name<input id="name" name="name" autocomplete="name" placeholder="First name"></label>
+            <label for="phone">Your phone<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Best number"></label>
+          </div>
+          <label for="addr">Pickup address or area<input id="addr" name="addr" autocomplete="street-address" placeholder="Street or neighborhood"></label>
+          <label for="what">What needs to go<textarea id="what" name="what" placeholder="Example: an old couch, a mattress and some boxes in the garage"></textarea></label>
+          <div class="row">
+            <label for="when">When works for you<input id="when" name="when" placeholder="Example: Saturday morning"></label>
+            <label for="to">Send to<select id="to" name="to"><option value="+16196380519">619-638-0519</option><option value="+16199876571">619-987-6571</option></select></label>
+          </div>
+          <button class="send" type="submit">Text my request</button>
+          <p class="fine" id="msg" aria-live="polite">On a computer? Call or text 619-638-0519 or 619-987-6571 from your phone.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Junk in the Trunk</strong><br>Junk hauling</div>
+    <div>Call or text<br><a href="tel:+16196380519">619-638-0519</a> &nbsp;·&nbsp; <a href="tel:+16199876571">619-987-6571</a></div>
+    <div>&copy; <span id="yr"></span> Junk in the Trunk</div>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Contact">
+  <a href="tel:+16196380519">Call us</a>
+  <a class="t" href="sms:+16196380519">Text us</a>
+</nav>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('f').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var v = function (id) { return document.getElementById(id).value.trim(); };
+  var lines = ['Hi Junk in the Trunk! I need a pickup.'];
+  if (v('name')) lines.push('Name: ' + v('name'));
+  if (v('phone')) lines.push('Phone: ' + v('phone'));
+  if (v('addr')) lines.push('Where: ' + v('addr'));
+  if (v('what')) lines.push('What: ' + v('what'));
+  if (v('when')) lines.push('When: ' + v('when'));
+  var to = v('to');
+  var ios = /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent) && 'ontouchend' in document;
+  var href = 'sms:' + to + (ios ? '&' : '?') + 'body=' + encodeURIComponent(lines.join('\n'));
+  window.location.href = href;
+  document.getElementById('msg').textContent = 'Your texting app should open with the request filled in. Add a photo and hit send.';
+});
+</script>
+</body>
+</html>
