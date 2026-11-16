@@ -113,15 +113,19 @@ footer strong { color: var(--ink); font-family: var(--display); font-size: 20px;
 
 @media (max-width: 820px) {
   .hero .wrap, .request { grid-template-columns: 1fr; }
-  .truck { justify-self: start; max-width: 300px; order: -1; }
+  .truck { justify-self: start; max-width: 190px; order: -1; margin-bottom: -18px; }
+  .hero .wrap { padding-block: 8px 48px; gap: 18px; }
+  .hero h1 { font-size: clamp(48px, 14vw, 64px); }
+  .hero p.lede { font-size: 18px; margin: 14px 0 20px; }
   .steps { grid-template-columns: 1fr; }
   .bar { display: flex; }
   .nav a.small { display: none; }
 }
 @media (max-width: 480px) {
   .row { grid-template-columns: 1fr; }
-  .call { flex-direction: column; align-items: flex-start; }
-  .call .act { text-align: left; }
+  .call { padding: 14px 16px; }
+  .call .num { font-size: 24px; }
+  .call .act { font-size: 12px; }
   section { padding-block: 56px; }
 }
 </style>
